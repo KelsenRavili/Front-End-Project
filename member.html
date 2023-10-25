@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="member.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Member</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">TanakaGuitar.</a>
+        <div class="bx bx-menu" id="menu"></div>
+        <ul class="navbar active">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Gallery</a></li>
+            <li><a href="member.html">Member</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="index.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <div class="wrapper">
+        <div class="title">Membership Form</div>
+            <form action="" class="form" method="post" onsubmit="return validate()">
+                    <div class="input-text">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" class="input" placeholder="Enter your name">
+                    </div>
+                <div class="input-text">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" class="input" placeholder="Enter your email">
+                </div>
+                <div class="input-text">
+                    <label>Gender</label>
+                    <div class="custom">
+                        <select name="" id="gender">
+                            <option value="Gender" selected hidden>Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-text">
+                    <label for="address">Address</label>
+                    <textarea class="textarea" id="address" placeholder="Enter your address"></textarea>
+                </div>
+                <div class="input-text check">
+                    <label class="check">
+                        <input type="checkbox" id="letter">
+                    </label>
+                    <p>Get Daily Letter</p>
+                </div>
+                <div class="input-text">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </div>
+            </form>
+    <script src="member.js"></script>
+</body>
+</html>
